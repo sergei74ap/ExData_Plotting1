@@ -21,11 +21,11 @@ plot(df$Date, df$Sub_metering_1, type = "l",
      xlab = "", ylab = "Energy sub metering")
 lines(df$Date, df$Sub_metering_2, col = "red")
 lines(df$Date, df$Sub_metering_3, col = "blue")
-legend("topright", bty = "n",
+legend("topright", bty = "n", lwd = 2,
        legend = c("Sub_metering_1", 
                   "Sub_metering_2",
                   "Sub_metering_3"),
-       lwd = 2, col = c("black", "red", "blue"))
+       col = c("black", "red", "blue"))
 
 plot(df$Date, df$Global_reactive_power, type = "l", 
      xlab = "datetime", ylab = "Global Reactive Power")
